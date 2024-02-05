@@ -1,0 +1,61 @@
+﻿@model Test_List.Models.StudentViewModel
+
+@{
+    ViewData["Title"] = "Delete Student Information";
+    var errorMessage = TempData["errorMessage"]?.ToString();
+}
+
+<h4>@ViewData["Title"]</h4>
+<hr />
+
+@if (!string.IsNullOrWhiteSpace(errorMessage))
+{
+    <div class="alert alert-error">
+        <strong>ERROR! </strong>@errorMessage
+        <button type="button" class="btn-close float-end" data-bs-dismiss="alert"></button>
+    </div>
+
+
+}
+
+<form action="Delete" method="post">
+
+    <div class="mb-3">
+        <label class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly />
+
+        <div class="mb-3">
+            <label class="form-label">First Name</label>
+            <input type="text" class="form-control" asp-for="Name" readonly />
+           
+
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Last Name</label>
+            <input type="text" class="form-control" asp-for="LastName" readonly />
+           
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Date of registration</label>
+            <input type="date" class="form-control" asp-for="DateofRegister" readonly />
+            
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" asp-for="Email" readonly />
+        
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Current Units</label>
+            <input type="text" class="form-control" asp-for="Units" readonly />
+        
+        </div>
+
+    </div>
+
+
+    <div class="d-grid">
+        <button type="submit" class="btn-danger" onclick="return confirm('Do you want to delete this data?: @Model.fullname')"> Delete</button>
+    </div>
+
+</form>

@@ -1,0 +1,67 @@
+﻿@model Test_List.Models.StudentViewModel
+
+@{
+    ViewData["Title"] = "Edit Student Information";
+    var errorMessage = TempData["errorMessage"]?.ToString();
+}
+
+<h4>@ViewData["Title"]</h4>
+<hr />
+
+@if (!string.IsNullOrWhiteSpace(errorMessage))
+{
+    <div class="alert alert-error">
+        <strong> ERROR!</strong>@errorMessage
+        <button type="button" class="btn-close float-end" data-bs-dismiss="alert"></button>
+    </div>
+
+
+}
+
+<form action="Edit" method="post" autocomplete="off">
+
+    <div class="mb-3">
+        <label class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly />
+
+        <div class="mb-3">
+            <label class="form-label">First Name</label>
+            <input type="text" class="form-control" asp-for="Name" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+            
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Last Name</label>
+            <input type="text" class="form-control" asp-for="LastName" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Date of registration</label>
+            <input type="date" class="form-control" asp-for="DateofRegister" />
+            <span asp-validation-for="DateofRegister" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" asp-for="Email" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Current Units</label>
+            <input type="text" class="form-control" asp-for="Units" />
+            <span asp-validation-for="Units" class="text-danger"></span>
+        </div>
+
+    </div>
+
+
+    <div class="d-grid">
+        <button type="submit" class="btn-success"> Update</button>
+    </div>
+
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2bd9e4e8-dc02-4b56-8798-e8a07d20568c" namespace="Test_List.Views.Student.ORMDataModel1" dataBaseShemaInfo="H4sIAAAAAAAEAMVXbU/jOBD+ftL9hyifQFo3TuK8VWlXtIVVtXcrboHVfUNOPC7RpUkvLwX21984TUtSyrILiPvSZh7PeOaxZzx2+PFumWprKMokz0a6OaD6x/Hvv4UTXsJFlRd8AfNM5hpqZeXwrhQj/aaqVkPDuL29Hdzag7xYGBalpvH3n39cxDew5PpOOXlemSRZWfEsBh29alp4yaMUSuWykbdIB9hC2he+hJFeVrWArCr13TAqnBfJkhf3n+G+1Tr/fH291by+ti3TPvXtM3bi+xPGbF2bl1dZ8m+NmlVRQ3cunG2ap/UyK3sgwmVVJNlinIjQaD97VsZjs9B4CKwLH3IQziYbWNv8Xd6vMLp5VtmW3pJKhAoc52qjRmGuGCZVB/lSp6larpEueVoiNJuoqdoZskrXjJ/we9EQ3DrO8FfXLpLv+G1S+qybNS/iG14coe7xS/xhniTpzqHzCw6dlzlc3eTZjqFFD09uvWxuLkQBZdlbv9ct1oxXcJmoLdnMEBeAiLjm1eGFimYgeZ1W33iqMv5oAZVAg6Pj434kCqzUvPuZ37XXsMyHVRMHng5DsY1lbFGLEWoR6lxSe2j7Q+YPzMALja71Xsls6fVq5kAdzTMBd/CoYBr4DSr+yZp/tuoPx7uh1kT3o5Cv/uqGfDJxT13TZa4znU7cwHl1yE0VvTrq0Hi8+OFZXkCyyPAoKjsZGxrNQf0gn2aNrKIPjVbYDc6SUgFXK5VC4yZX0X8P3Ol+qhMxF2MqbSkdGhDTCSRhcWSSyDOBSGk50pTUCYIoNFrlnXHLtNdSnoRxQG1Om5Zq1ztiT+1H5H6VYJekZbsxDzyHBF7kECaxqjiTDol8ySzpulEQeY9Idnb0JTzVAf/+TH2TUV/6gjhgM8I8EZBACkGsIBDUsYBzl74107Yo3puqGzOwaewTrlgiVZ/4vsNIZHJhmzZnUfDmVJum9v5UmRdEDnNt4kvky9w4INwFjwRgxtTlnDm29dZU2x77/mS5JTCLkaxNmUkYD2LCEcGzibm+FTiCefKtyT60+/fnG9m+SyPPIy6PXcIsYeHhxF1iSS+irmAST6qf5nsIbXvIDmnlB5VQvVJAnBd53IBt/wm/bZ404xmsT+9WKhsGeE/ig7VlD6wPWjs8UtKADegHbYp3krqAUQZ1VfD0g3ZeR2kSY0+7zP+BbBT5vjA9hwmPUmABD42ti8bfNOVlCaXagK/1bnXDE4GhgUzudn1RQRe17EFfYZmvYV9xg+7rTvFlNr7K8I6YLQD7USNvluZQDPgWyldQVMn/HNsTYYSfIIMC02uaL5fq4tPm6CO4pzyDEq8bUJwlmAp7Fv2xxmwGKVRwUpZ5nPAKt2xrc2CgMdjemSdww9dJXozbOysW2P4IvpWNvcfy+D8ey7mMVQ8AAA==" generateConnectionHelper="true" generateStoredProcedures="false" fieldNameCase="Unchanged" generateDefaultConstructors="false" useNameOf="true" connectionStringName="DESKTOP-BEES8BPSQLEXPRESS" createdInVersion="23.2.4.0" generateJsonSerializationContractResolver="true" generateServiceCollectionExtensions="true" lastModifiedInVersion="23.2.4.0" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+  <comments>
+    <dataBaseObjectModelHasComments Id="9b92645f-2d92-494c-9656-523aecc08a84">
+      <comment Id="d9cdc68f-4f26-471d-8241-e93250214310" text="The 'PK__students__3213E83F4A88B443' index is ignored, because 'id' is a key" name="studentsComment">
+        <subjects>
+          <commentReferencesSubjects Id="735214f4-c510-4d24-9ec5-4a47ce81f536">
+            <xpObjectMoniker Id="0f3ff509-159f-4cb1-b71e-ff25f1f0599b" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+  </comments>
+  <classes>
+    <dataBaseObjectModelHasClasses Id="4f77a305-ed04-4849-b0bd-abe2f82c1bfb">
+      <xpObject Id="0f3ff509-159f-4cb1-b71e-ff25f1f0599b" name="students" baseClass="XPLiteObject" userFileName="students" designerFileName="students.Designer" className="students" initialName="students" virtualBaseClass="XPLiteObject" persistent="students" virtualName="students">
+        <fields>
+          <generalXpObjectHasFields Id="f0c37b44-0d81-434a-877f-7d13b7dc3cd8">
+            <field Id="236ca975-97b5-4f24-a4f5-b8f42f66b9b7" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="276b7620-9d16-42da-9031-ddc57800a5c8">
+            <field Id="81408f8d-5e34-47d9-9fdd-299d052eaa60" name="name" initialName="name" persistent="name" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ddeec8c6-9e51-4e57-8583-d3bf4c657e51">
+            <field Id="6c4e30c8-a7d9-47d8-8854-b1ad313a4b90" name="email" initialName="email" persistent="email" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="150" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="8c828dfb-fd96-4086-8b16-1284d3055bd2">
+            <field Id="479b5463-8fc8-46c9-a6e7-9e1c06aa4532" name="phone" initialName="phone" persistent="phone" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d489aaa1-d4af-4ac8-b17c-2b3d030446f9">
+            <field Id="a2d81463-3041-4a9c-ad81-4c468295d47f" name="address" initialName="address" persistent="address" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="0ea006bf-f372-4689-9036-53a363d4b9a0">
+            <field Id="b3860b77-6ac6-42d2-a4a6-2f7b06d4f4f5" name="created_at" columnType="DateTime" initialName="created_at" persistent="created_at" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" defaultValue="DateTime#02/05/2024 03:38:48" dbDefaultValue="(getdate())" />
+          </generalXpObjectHasFields>
+        </fields>
+        <indexes>
+          <xpObjectHasIndexes Id="2ff7f443-d2c3-47ea-b410-070f08d17937">
+            <index Id="82451e99-7799-4427-bc75-6dc96a2cfd74" name="UQ__students__AB6E616465CCB695" unique="true">
+              <fieldsInIndex>
+                <indexReferencesFields Id="f954aaef-c4b9-4d3a-8807-78413d6bf0a8">
+                  <fieldMoniker Id="6c4e30c8-a7d9-47d8-8854-b1ad313a4b90" />
+                </indexReferencesFields>
+              </fieldsInIndex>
+            </index>
+          </xpObjectHasIndexes>
+        </indexes>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+  </classes>
+</dataBaseObjectModel>

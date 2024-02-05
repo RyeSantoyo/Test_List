@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_List", "Test_List\Test_List.csproj", "{66FFF71E-C972-482A-99C3-CD5C9A3EAD92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{F2E2B4AB-87F4-4292-B27E-A5FCA79882CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66FFF71E-C972-482A-99C3-CD5C9A3EAD92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66FFF71E-C972-482A-99C3-CD5C9A3EAD92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66FFF71E-C972-482A-99C3-CD5C9A3EAD92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66FFF71E-C972-482A-99C3-CD5C9A3EAD92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E315D4F5-0EF3-4230-A2AF-455B24273320}
+	EndGlobalSection
+EndGlobal
